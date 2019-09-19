@@ -18,4 +18,4 @@ jobs:
           python -m pip install pylint --quiet
           pylint boston/*.py
           pylint iris/*.py
-        dispayName: 'Run lint tests'
+        displayName: 'Run lint tests'
