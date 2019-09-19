@@ -1,17 +1,13 @@
 trigger:
+  - azure-pipelines
   - master
 
-# specific branch build
-pr:
-  branches:
-    include:
-      - master
-    exclude:
-      - feature/*  # regex wildcard (or any other regex)
+jobs:
+  - job: Ubuntu_unit_test
 
-pool:
-  vmImage: 'Ubuntu-16.04'
+    pool:
+      vmImage: 'Ubuntu-16.04'
 
-steps:
-  - script: echo "Hello World!"
-    displayName: "Run AZ pipelines Hello World"
+    steps:
+      - script: echo "Hello world"
+        displayName: NiceName
