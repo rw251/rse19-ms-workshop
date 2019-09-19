@@ -12,10 +12,10 @@ jobs:
       - script: |
           pip install -U pip
           pip install -r requirements.txt
-        displayName: Install things
+        displayName: 'Install things'
 
       - script: |
           python -m pip install pylint --quiet
           pylint boston/*.py
           pylint iris/*.py
-        dispayName: Run lint tests
+        dispayName: 'Run lint tests'
